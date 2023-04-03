@@ -1,0 +1,171 @@
+/* Colors and fonts */
+body {
+	background-color: #F3C1C0;
+	color: #ED6E45;
+	font-family: 'Playfair Display', serif;
+	font-size: 16px;
+	font-weight: lighter;
+}
+h1, h2, h3 {
+	font-family: 'Oswald', sans-serif;
+}
+h1 {
+	color: #ED6E45;
+	font-size: 40px;
+	font-weight: 700;
+}
+h2 {
+	color: #E75121;
+	font-size: 22px;
+	font-weight: bolder;
+	font-weight: 400;
+}
+a {
+	font-family: 'Oswald', sans-serif;
+	text-decoration: none;
+	transition: color 0.3s ease;
+	color: #E75121;
+	font-weight: 500;
+	font-size: 16px;
+}	
+a:hover {
+	color: orange;
+	text-decoration: none;
+}
+
+/* Custom design with class */
+.container {
+	width: 700px;
+	margin: 40px auto;
+}
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+.card-white {
+	background-color: white;
+	padding: 40px;
+	box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+	margin: 20px 0px;
+	text-align: center;
+}
+.img-circle {
+	border-radius: 50%;
+}
+.btn-orange {
+	background-color: #E75121;
+	color: white;
+	padding: 15px 20px;
+	border-radius: 4px;
+}
+.btn-orange:hover {
+	background-color: orange;
+	color: white;
+}
+.list-inline {
+	list-style: none;
+	padding-left: 0px;
+}
+.list-inline li{
+	display: inline;
+	padding: 10px;
+}
+.list-inline i{
+	font-size: 50px;
+	color: rgb(230, 230, 230);
+}
+.list-inline i:hover {
+	color: pink;
+}
+/* Design adjustments using id */
+#introduction p {
+	margin-bottom: 40px;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  width: 180px;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.page-content {
+  margin-left: 200px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.sidebar a {
+	display: block;
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 14px;
+  background-color: #E75121;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: orange;
+  color: white;
+}
+
+@media (max-width: 1060px) {
+  /* Pour un écran < 1060px, ce CSS sera appliqué */
+  .sidebar {
+    width: 100%; /* Change la largeur à 100% */
+    height: auto; /* Permet une hauteur flexible en fonction du contenu */
+    position: static; /* Supprime la position fixe */
+    margin-bottom: 20px; /* Ajoute une marge en bas pour séparer la barre latérale du contenu principal */
+  }
+  .sidebar ul {
+    display: flex; /* Utilise Flexbox pour aligner les éléments sur une ligne */
+    flex-direction: row; /* Aligne les éléments horizontalement */
+    justify-content: center; /* Répartit l'espace entre les éléments */
+    padding: 0; /* Supprime le padding pour aligner les éléments avec le bord de la barre latérale */
+  }
+  .sidebar a {
+    display: block; /* Retourne à l'affichage en bloc pour permettre la largeur */
+    margin: 10px; /* Supprime la marge pour aligner les éléments */
+    width: auto; /* Rétablit la largeur automatique */
+  }
+}
+
+@media (max-width: 625px) {
+  /* Pour un écran < 625px, ce CSS sera appliqué */
+  .sidebar ul {
+    flex-wrap: wrap; /* Permet aux éléments de passer à la ligne */
+  }
+  .sidebar a {
+  display: block;
+  padding: 5px 20px; /* Réduit le padding pour réduire la largeur des boutons */
+  margin: 5px 5px;
+  font-size: 12px;
+  }
+}
+
